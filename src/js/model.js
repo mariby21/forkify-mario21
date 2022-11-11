@@ -1,3 +1,4 @@
+import { locale } from 'core-js';
 import { async } from 'regenerator-runtime';
 import { API_URL, KEY, RES_PER_PAGE } from './config.js';
 // import { getJSON, sentJSON } from './helpers.js';
@@ -148,4 +149,11 @@ export const uploadRecipe = async function (newREcipe) {
   } catch (err) {
     throw err;
   }
+};
+
+export const reload = function () {
+  const btnLogo = document.querySelector('.header__logo');
+  btnLogo.addEventListener('click', function () {
+    location.reload();
+  });
 };
