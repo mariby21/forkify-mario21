@@ -102,7 +102,7 @@ class RecipeView extends View {
         <div class="recipe__directions">
           <h2 class="heading--2">How to cook it</h2>
           <p class="recipe__directions-text">
-            This this._data was carefully designed and tested by
+            This was carefully designed and tested by
             <span class="recipe__publisher">${
               this._data.publisher
             }</span>. Please check out
@@ -128,7 +128,11 @@ class RecipeView extends View {
                   <use href="${icons}#icon-check"></use>
                 </svg>
                 <div class="recipe__quantity">${
+<<<<<<< HEAD
                   ing.quantity ? new fracty(ing.quantity).toString() : ''
+=======
+                  ing.quantity ? fracty(ing.quantity).toString() : ''
+>>>>>>> new-feature
                 }</div>
                 <div class="recipe__description">
                   <span class="recipe__unit">${ing.unit}</span>
