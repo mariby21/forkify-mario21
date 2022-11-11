@@ -128,9 +128,6 @@ const init = function () {
   searchView.addHandlerSearch(controlSearchResults);
   paginationView.addHandlerClick(controlPagination);
   addRecipeView.addHandlerUpload(controlAddRecipe);
-<<<<<<< HEAD
-=======
   model.reload();
->>>>>>> new-feature
 };
 init();
